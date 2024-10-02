@@ -3,16 +3,13 @@ def main():
 
     hours = convert(time)
 
-    print(hours)
-    # minutes = int(minutes)
-
-    if 7 >= hours <= 8:
+    if 7 <= hours <= 8:
         print("breakfast time")
 
-    elif 12 >= hours <= 13:
+    elif 12 <= hours <= 13:
         print("lunch time")
 
-    elif 18 >= hours <= 19:
+    elif 18 <= hours <= 19:
         print("dinner time")
 
 
