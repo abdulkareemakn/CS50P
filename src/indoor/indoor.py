@@ -1,5 +1,5 @@
-caps=input("Enter some text in CAPS: ")
+caps = input("Enter some text in CAPS: ")
 
-no_caps=caps.lower()
+no_caps = caps.lower()
 
 print(no_caps)
