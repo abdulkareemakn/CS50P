@@ -3,20 +3,23 @@ filetype = input("File Name: ")
 filetype = filetype.casefold()
 filetype = filetype.strip()
 
-filetype, extension = filetype.split(".")
+if filetype.endswith("gif"):
+    print("image/gif")
 
-match extension:
-    case "gif":
-        print("image/gif")
-    case "jpg" | "jpeg":
-        print("image/jpeg")
-    case "png":
-        print("image/png")
-    case "pdf":
-        print("application/pdf")
-    case "txt":
-        print("text/plain")
-    case "zip":
-        print("application/zip")
-    case _:
-        print("application/octet-stream")
+elif filetype.endswith("jpg") | filetype.endswith("jpeg"):
+    print("image/jpeg")
+
+elif filetype.endswith("png"):
+    print("image/png")
+
+elif filetype.endswith("pdf"):
+    print("application/pdf")
+
+elif filetype.endswith("txt"):
+    print("text/plain")
+
+elif filetype.endswith("zip"):
+    print("application/zip")
+
+else:
+    print("application/octet-stream")
